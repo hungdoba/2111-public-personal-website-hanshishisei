@@ -22,7 +22,7 @@ const AboutUs = () => {
         <Background id="aboutus">
             <Container>
                 <Title>
-                    <h2>絆支・至誠塾について</h2>
+                    <h3>絆支・至誠塾について</h3>
                 </Title>
                 <ContentCenter>
                     <Content>

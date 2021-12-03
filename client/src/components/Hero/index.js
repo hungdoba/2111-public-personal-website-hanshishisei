@@ -84,7 +84,6 @@ const Hero = () => {
                             duration={500}
                             spy={true}
                             exact="true"
-                            vertical={false}
                         >
                             探索
                         </MenuLinks>

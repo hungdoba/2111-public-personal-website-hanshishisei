@@ -168,6 +168,7 @@ export const BottomMenu = styled.div`
     text-align: center;
     vertical-align: middle;
     line-height: 5vh;
+
     background-color: ${({ backgroundColor }) =>
         backgroundColor ? backgroundColor : "white"};
     color: ${({ color }) => color || "blue"};
