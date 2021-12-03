@@ -21,7 +21,9 @@ const AboutUs = () => {
     return (
         <Background id="aboutus">
             <Container>
-                <Title>絆支・至誠塾について</Title>
+                <Title>
+                    <h2>絆支・至誠塾について</h2>
+                </Title>
                 <ContentCenter>
                     <Content>
                         <Paragraph>
@@ -36,8 +38,7 @@ const AboutUs = () => {
                     </Content>
                 </ContentCenter>
                 <ChildContent>
-                    <Title>◉また会おうの約束</Title>
-                    <Paragraph>（Promise to meet again ）</Paragraph>
+                    <Title>◉また会おうの約束（Promise to meet again ）</Title>
                     <ContentLeft>
                         <Content>
                             <Paragraph>

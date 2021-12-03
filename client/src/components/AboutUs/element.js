@@ -53,10 +53,10 @@ export const Title = styled.div`
     min-height: 10vh;
     line-height: 10vh;
     vertical-align: middle;
+    font-weight: bold;
+    font-size: 24px;
 
     @media screen and (max-width: 767px) {
-        font-weight: bold;
-        font-size: 24px;
         line-height: 1.5em;
     }
 `;
