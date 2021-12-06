@@ -19,16 +19,16 @@ const ViewImage = ({ visible, hideImage, imageAlt }) => {
     const [photo, setPhoto] = useState(Photos[0]);
 
     const nextImage = () => {
-        if (index >= photosLength - 1) {
-            setIndex(0);
+        if (index >= photosLength - 49) {
+            setIndex(50);
         } else {
             setIndex(index + 1);
         }
     };
 
     const previousImage = () => {
-        if (index <= 0) {
-            setIndex(photosLength - 1);
+        if (index <= 50) {
+            setIndex(photosLength - 49);
         } else {
             setIndex(index - 1);
         }

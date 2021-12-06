@@ -13,7 +13,7 @@ import {
     NavbarBackground,
 } from "./element";
 
-import photo0 from "../Images/photo01.jpg";
+import photo0 from "../Images/photos004.jpg";
 
 const Hero = () => {
     return (

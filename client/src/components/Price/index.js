@@ -7,11 +7,10 @@ import {
     ContentRight,
     Image,
     Li,
-    Paragraph,
     Title,
     Ul,
 } from "./element";
-import photo04 from "../Images/photo04.jpg";
+import photo04 from "../Images/photos008.jpg";
 
 const Price = () => {
     return (

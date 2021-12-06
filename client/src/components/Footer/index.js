@@ -2,7 +2,7 @@ import React from "react";
 
 import { Background, Container, Title, Image, Website } from "./element";
 
-import GithubIcon from "../Images/photo02.png";
+import GithubIcon from "../Images/photos005.jpg";
 
 const Footer = () => {
     return (

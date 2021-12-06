@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import forestLargeBlur from "../Images/photo02.jpg";
-import whiteBackground from "../Images/photo01.png";
-import whiteBackgrounds from "../Images/photo01s.png";
+import forestLargeBlur from "../Images/photos001.jpg";
+import whiteBackground from "../Images/photos002.jpg";
+import whiteBackgrounds from "../Images/photos003.jpg";
 import { Link } from "react-scroll";
 
 export const Background = styled.div`

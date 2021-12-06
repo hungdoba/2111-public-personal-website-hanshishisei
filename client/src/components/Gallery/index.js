@@ -11,7 +11,7 @@ const Gallery = ({ showImage }) => {
 
     useEffect(() => {
         const photosLength = Photos.length;
-        const columnLength = Math.ceil(photosLength / 4) + 1;
+        const columnLength = Math.ceil(photosLength / 4);
         let temp = Photos.slice(0, columnLength);
         setColumn1(temp);
         temp = Photos.slice(columnLength, 2 * columnLength);
