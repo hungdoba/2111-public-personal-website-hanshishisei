@@ -16,7 +16,7 @@ const Footer = () => {
                     <Image alt="github" src={GithubIcon} title="Github" />
                 </Title>
 
-                <Website href="/#/blog">HanshiShiei.com</Website>
+                <Website href="/#/blog">Hanshishisei.jp</Website>
             </Container>
         </Background>
     );

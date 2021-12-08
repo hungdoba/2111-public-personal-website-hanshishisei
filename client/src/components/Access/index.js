@@ -9,7 +9,9 @@ import {
     Paragraph,
     Iframe,
     Title,
+    Image,
 } from "./element";
+import photoBus from "../Images/photos016.jpg";
 
 const Access = () => {
     return (
@@ -24,7 +26,7 @@ const Access = () => {
                             住所：茨城県日立市入四間町１５６６－９
                         </Paragraph>
                         <Paragraph>電話番号：08010807396</Paragraph>
-                        <Paragraph>メール：chiba.hanshi@gmai.com</Paragraph>
+                        <Paragraph>メール：hanshishiseijuku@gmai.com</Paragraph>
                     </Content>
                 </ContentLeft>
                 <ContentRight>
@@ -36,6 +38,21 @@ const Access = () => {
                             loading="lazy"
                         ></Iframe>
                     </Map>
+                </ContentRight>
+            </Container>
+            <Container>
+                <ContentLeft>
+                    <Content>
+                        <Paragraph>
+                            バスで：日立駅から
+                            「６０日立駅～神峰公園口～東河内」東河内バスに乗ります。
+                            ２９分後、緑丘（みどりがおか）に降ります。
+                            十王の方に１．１ｋｍで歩きます。
+                        </Paragraph>
+                    </Content>
+                </ContentLeft>
+                <ContentRight>
+                    <Image src={photoBus} />
                 </ContentRight>
             </Container>
         </Background>

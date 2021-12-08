@@ -21,6 +21,7 @@ export const Container = styled.div`
 
 export const ContentLeft = styled.div`
     width: 38.2%;
+    margin-bottom: 5vh;
 
     @media screen and (max-width: 767px) {
         width: 100%;
@@ -37,6 +38,14 @@ export const ContentRight = styled.div`
 
 export const Image = styled.img`
     width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+`;
+
+export const ImageSmall = styled.img`
+    width: 50%;
     height: auto;
     margin-top: 5%;
     margin-bottom: 5%;
