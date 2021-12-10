@@ -7,11 +7,13 @@ import Footer from "../components/Footer";
 import ScrollButton from "../components/ScrollButton";
 import { useEffect, useState } from "react";
 import ViewImage from "../components/ViewImage";
+import SetStatus from "../components/SetStatus";
 
 const Main = () => {
     const [showScrollButton, setShowScrollButton] = useState(false);
     const [showViewImage, setShowViewImage] = useState(false);
     const [imageAlt, setImageAlt] = useState();
+    const [hiddenLogin, setHiddenLogin] = useState(true);
 
     const hideImage = () => {
         setShowViewImage(false);
@@ -51,7 +53,7 @@ const Main = () => {
             <Gallery showImage={showImage} />
             <Price />
             <Access />
-            <Footer />
+            <Footer setHiddenLogin={setHiddenLogin} />
             <ScrollButton visible={showScrollButton} onClick={scrollHome} />
             <ViewImage
                 visible={showViewImage}
@@ -59,6 +61,7 @@ const Main = () => {
                 hideImage={hideImage}
                 setImageAlt={setImageAlt}
             />
+            <SetStatus hidden={hiddenLogin} setHidden={setHiddenLogin} />
         </>
     );
 };

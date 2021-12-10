@@ -3,9 +3,13 @@ const path = require("path");
 const express = require("express");
 require("dotenv").config({ path: "./config.env" });
 
+const statusRoute = require("./routes/status");
+
 const app = express();
 
 app.use(cors());
+
+app.use("/status", statusRoute);
 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "client", "build")));

@@ -14,4 +14,8 @@ export const Button = styled.div`
         font-size: 3.5rem;
         color: darkblue;
     }
+
+    @media screen and (max-width: 767px) {
+        bottom: 5px;
+    }
 `;

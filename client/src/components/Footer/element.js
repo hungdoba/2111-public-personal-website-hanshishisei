@@ -15,21 +15,22 @@ export const Container = styled.div`
     align-items: center;
 
     @media screen and (max-width: 1025px) {
-        width: 100%;
+        width: 80%;
         height: 10vw;
+        margin-left: 5vw;
     }
 
     @media screen and (max-width: 767px) {
-        width: 100%;
+        width: 80%;
         height: 20vw;
+        margin-left: 5vw;
     }
 `;
 
 export const Title = styled.a`
-    margin: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     color: white;
-    @media screen and (max-width: 1007px) {
-    }
 `;
 
 export const Website = styled.a`

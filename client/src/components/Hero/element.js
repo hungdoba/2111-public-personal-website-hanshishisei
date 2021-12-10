@@ -35,6 +35,13 @@ export const Container = styled.div`
     height: 80vh;
     margin-top: auto;
     margin-bottom: auto;
+    padding-bottom: 5vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
     overflow: hidden;
     border-radius: 1vw;
     background-size: cover;
@@ -57,9 +64,9 @@ export const Img = styled.img`
 export const NavbarBackground = styled.div`
     width: 100%;
     height: 30%;
-    background-image: url(${whiteBackground});
     background-size: 100%;
     background-repeat: no-repeat;
+    background-image: url(${whiteBackground});
 
     @media screen and (max-width: 676px) {
         background-image: url(${whiteBackgrounds});
@@ -115,13 +122,36 @@ export const MenuLinks = styled(Link)`
 `;
 
 export const Content = styled.div`
-    width: 30%;
+    width: 80%;
     color: white;
-    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+`;
+
+export const ContentLeft = styled.div`
+    width: 50%;
+    color: white;
 
     @media screen and (max-width: 767px) {
-        width: 80%;
+        width: 100%;
+        display: none;
     }
+`;
+
+export const ContentRight = styled.div`
+    width: 50%;
+    color: white;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+`;
+
+export const ContentCenter = styled.div`
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-bottom: 2em;
 `;
 
 export const Title = styled.div`
@@ -146,9 +176,6 @@ export const Text = styled.div`
 export const BottomNavbar = styled.div`
     width: 70%;
     height: 5vh;
-    margin-top: 12%;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -157,7 +184,6 @@ export const BottomNavbar = styled.div`
 
     @media screen and (max-width: 676px) {
         width: 90%;
-        margin-top: 90%;
     }
 `;
 

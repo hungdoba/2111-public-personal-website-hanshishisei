@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import axios from "axios";
 import {
     Menu,
     Text,
@@ -11,11 +13,30 @@ import {
     BottomMenu,
     BottomNavbar,
     NavbarBackground,
+    ContentLeft,
+    ContentRight,
+    ContentCenter,
 } from "./element";
 
 import photo0 from "../Images/photos004.jpg";
 
 const Hero = () => {
+    const [status, setStatus] = useState("status");
+
+    useEffect(() => {
+        const getStatus = async () => {
+            const res = await axios.get("/status");
+            setStatus(res.data);
+        };
+        getStatus();
+    }, []);
+
+    const openPhone = () => {
+        window.open(
+            "mailto:email@example.com?subject=Subject&body=Body%20goes%20here"
+        );
+    };
+
     return (
         <Background>
             <Container image={photo0}>
@@ -69,13 +90,30 @@ const Hero = () => {
                     </Navbar>
                 </NavbarBackground>
                 <Content>
-                    <Text>はんし・しせいじゅく</Text>
-                    <Title>絆支・至誠塾</Title>
-                    <Text> 夢の続き </Text>
-                    <Text> Activity Space The continuation of the dream </Text>
+                    <ContentCenter>
+                        <h2>{status}</h2>
+                    </ContentCenter>
+                    <ContentLeft>
+                        <Text>はんし・しせいじゅく</Text>
+                        <Title>絆支・至誠塾</Title>
+                        <Text> 夢の続き </Text>
+                        <Text>
+                            {" "}
+                            Activity Space The continuation of the dream{" "}
+                        </Text>
+                    </ContentLeft>
+                    <ContentRight>
+                        <Text>はんし・しせいじゅく</Text>
+                        <Title>絆支・至誠塾</Title>
+                        <Text> 夢の続き </Text>
+                        <Text>
+                            {" "}
+                            Activity Space The continuation of the dream{" "}
+                        </Text>
+                    </ContentRight>
                 </Content>
                 <BottomNavbar>
-                    <BottomMenu>電話で連絡</BottomMenu>
+                    <BottomMenu onClick={openPhone}>電話で連絡</BottomMenu>
                     <BottomMenu>メールで連絡</BottomMenu>
                     <BottomMenu backgroundColor="coral" color="white">
                         <MenuLinks

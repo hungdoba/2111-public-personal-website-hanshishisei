@@ -3,8 +3,13 @@ import React from "react";
 import { Background, Container, Title, Image, Website } from "./element";
 
 import GithubIcon from "../Images/photos005.jpg";
+import LoginIcon from "../Images/photos022.jpg";
 
-const Footer = () => {
+const Footer = ({ setHiddenLogin }) => {
+    const login = () => {
+        setHiddenLogin(false);
+    };
+
     return (
         <Background>
             <Container>
@@ -15,6 +20,13 @@ const Footer = () => {
                 >
                     <Image alt="github" src={GithubIcon} title="Github" />
                 </Title>
+
+                <Image
+                    alt="login"
+                    src={LoginIcon}
+                    title="Login"
+                    onClick={login}
+                />
 
                 <Website href="/#/blog">Hanshishisei.jp</Website>
             </Container>
