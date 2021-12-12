@@ -44,9 +44,8 @@ export const Image = styled.img`
 
 export const Title = styled.div`
     width: 90%;
-    height: 10vh;
     margin: auto;
-    line-height: 10vh;
+    line-height: 3rem;
     vertical-align: middle;
 `;
 

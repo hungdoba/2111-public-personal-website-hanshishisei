@@ -16,9 +16,16 @@ import {
     ContentLeft,
     ContentRight,
     ContentCenter,
+    TopPhoto,
+    TopContent,
+    Image,
+    SmallText,
+    MediumText,
 } from "./element";
 
 import photo0 from "../Images/photos004.jpg";
+import photo023 from "../Images/photos023.jpg";
+import photo024 from "../Images/photos024.jpg";
 
 const Hero = () => {
     const [status, setStatus] = useState("status");
@@ -94,22 +101,32 @@ const Hero = () => {
                         <h2>{status}</h2>
                     </ContentCenter>
                     <ContentLeft>
-                        <Text>はんし・しせいじゅく</Text>
-                        <Title>絆支・至誠塾</Title>
-                        <Text> 夢の続き </Text>
-                        <Text>
-                            {" "}
-                            Activity Space The continuation of the dream{" "}
-                        </Text>
+                        <TopPhoto>
+                            <Image alt="wife" src={photo024} />
+                            <SmallText>タウリン</SmallText>
+                        </TopPhoto>
+                        <TopContent>
+                            <MediumText>15億7.500万人との絆</MediumText>
+                            <MediumText>タウリンのゆる～り</MediumText>
+                            <MediumText>アウトトアープラス</MediumText>
+                            <MediumText>
+                                ～トンビ（キジ）と絆と仲間たち～
+                            </MediumText>
+                        </TopContent>
                     </ContentLeft>
                     <ContentRight>
-                        <Text>はんし・しせいじゅく</Text>
-                        <Title>絆支・至誠塾</Title>
-                        <Text> 夢の続き </Text>
-                        <Text>
-                            {" "}
-                            Activity Space The continuation of the dream{" "}
-                        </Text>
+                        <TopPhoto>
+                            <Image alt="wife" src={photo023} />
+                            <SmallText>エンちゃん</SmallText>
+                        </TopPhoto>
+                        <TopContent>
+                            <Text>はんし・しせいじゅく</Text>
+                            <Title>絆支・至誠塾</Title>
+                            <Text> 夢の続き </Text>
+                            <Text>
+                                Activity Space The continuation of the dream{" "}
+                            </Text>
+                        </TopContent>
                     </ContentRight>
                 </Content>
                 <BottomNavbar>

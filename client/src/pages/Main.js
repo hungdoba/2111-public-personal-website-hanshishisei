@@ -8,6 +8,7 @@ import ScrollButton from "../components/ScrollButton";
 import { useEffect, useState } from "react";
 import ViewImage from "../components/ViewImage";
 import SetStatus from "../components/SetStatus";
+import History from "../components/History";
 
 const Main = () => {
     const [showScrollButton, setShowScrollButton] = useState(false);
@@ -62,6 +63,7 @@ const Main = () => {
                 setImageAlt={setImageAlt}
             />
             <SetStatus hidden={hiddenLogin} setHidden={setHiddenLogin} />
+            <History hidden />
         </>
     );
 };

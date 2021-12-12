@@ -40,7 +40,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     overflow: hidden;
     border-radius: 1vw;
@@ -123,14 +123,23 @@ export const MenuLinks = styled(Link)`
 
 export const Content = styled.div`
     width: 80%;
+    height: 65%;
     color: white;
     display: flex;
     flex-wrap: wrap;
 `;
 
 export const ContentLeft = styled.div`
-    width: 50%;
+    width: 45%;
+    max-height: 55%;
     color: white;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 1em;
+    border: 1px solid white;
+    background: rgba(0, 204, 255, 0.5);
 
     @media screen and (max-width: 767px) {
         width: 100%;
@@ -138,9 +147,30 @@ export const ContentLeft = styled.div`
     }
 `;
 
+export const TopPhoto = styled.div`
+    width: 30%;
+    height: 100%;
+    border-radius: 1em;
+    overflow: hidden;
+`;
+
+export const TopContent = styled.div`
+    width: 70%;
+    height: 100%;
+`;
+
 export const ContentRight = styled.div`
-    width: 50%;
+    width: 45%;
+    max-height: 55%;
     color: white;
+    margin-top: 10%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 1em;
+    border: 1px solid white;
+    background: rgba(0, 204, 255, 0.5);
 
     @media screen and (max-width: 767px) {
         width: 100%;
@@ -173,11 +203,29 @@ export const Text = styled.div`
     }
 `;
 
+export const MediumText = styled.div`
+    font-size: 20px;
+    margin: 10px;
+
+    @media screen and (max-width: 767px) {
+        font-size: 16px;
+    }
+`;
+
+export const SmallText = styled.div`
+    font-size: 18px;
+    margin-left: 30px;
+
+    @media screen and (max-width: 767px) {
+        font-size: 16px;
+    }
+`;
+
 export const BottomNavbar = styled.div`
     width: 70%;
     height: 5vh;
     border-radius: 20px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-around;
     overflow: hidden;
@@ -210,4 +258,11 @@ export const ChildContent = styled.div`
     display: flex;
     flex-wrap: wrap;
     margin-left: 20px;
+`;
+
+export const Image = styled.img`
+    height: 80%;
+    width: auto;
+    margin: 1em 1em 0 1em;
+    border-radius: 1em;
 `;
