@@ -102,7 +102,7 @@ const Hero = () => {
                     </ContentCenter>
                     <ContentLeft>
                         <TopPhoto>
-                            <Image alt="wife" src={photo024} />
+                            <Image alt="chiba" src={photo024} />
                             <SmallText>タウリン</SmallText>
                         </TopPhoto>
                         <TopContent>

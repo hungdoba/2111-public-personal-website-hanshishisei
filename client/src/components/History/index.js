@@ -24,7 +24,7 @@ const History = ({ hidden }) => {
                     <Image
                         src={selectedPhoto.src}
                         alt={selectedPhoto.alt}
-                        id={selectedPhoto.id}
+                        key={selectedPhoto.key}
                     />
                 )}
             </MainPhoto>
@@ -36,7 +36,7 @@ const History = ({ hidden }) => {
                                 onClick={selectPhoto}
                                 src={photo.image}
                                 alt={photo.alt}
-                                id={photo.id}
+                                key={photo.key}
                             />
                         );
                     })}
