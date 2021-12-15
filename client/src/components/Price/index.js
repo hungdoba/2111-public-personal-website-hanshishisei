@@ -10,7 +10,7 @@ import {
     Title,
     Ul,
 } from "./element";
-import photo04 from "../Images/photos008.jpg";
+import photo04 from "../Images/system/photos008.jpg";
 
 const Price = () => {
     return (

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {
     Background,
-    GallaryPhoto,
+    GalleryPhoto,
     MainPhoto,
     Image,
     CloseButton,
@@ -28,7 +28,7 @@ const History = ({ hidden }) => {
                     />
                 )}
             </MainPhoto>
-            <GallaryPhoto>
+            <GalleryPhoto>
                 {Histories &&
                     Histories.map((photo) => {
                         return (
@@ -40,7 +40,7 @@ const History = ({ hidden }) => {
                             />
                         );
                     })}
-            </GallaryPhoto>
+            </GalleryPhoto>
             <CloseButton>
                 <CloseSymbol onClick={hideImage}>&#10006;</CloseSymbol>
             </CloseButton>

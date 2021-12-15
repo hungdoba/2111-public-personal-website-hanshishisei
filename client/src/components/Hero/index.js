@@ -1,12 +1,11 @@
-import { useEffect, useState } from "react";
 import axios from "axios";
+import { useEffect, useState } from "react";
 import {
     Menu,
     Text,
     Title,
     Navbar,
     Content,
-    MenuLink,
     MenuLinks,
     Container,
     Background,
@@ -21,11 +20,12 @@ import {
     Image,
     SmallText,
     MediumText,
+    MenuRoute,
 } from "./element";
 
-import photo0 from "../Images/photos004.jpg";
-import photo023 from "../Images/photos023.jpg";
-import photo024 from "../Images/photos024.jpg";
+import photo0 from "../Images/system/photos004.jpg";
+import photo023 from "../Images/system/photos023.jpg";
+import photo024 from "../Images/system/photos024.jpg";
 
 const Hero = () => {
     const [status, setStatus] = useState("status");
@@ -38,10 +38,18 @@ const Hero = () => {
         getStatus();
     }, []);
 
-    const openPhone = () => {
-        window.open(
-            "mailto:email@example.com?subject=Subject&body=Body%20goes%20here"
-        );
+    const gotoPrice = () => {
+        var element = document.getElementById("price");
+        if (element !== null) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
+    const gotoAccess = () => {
+        var element = document.getElementById("access");
+        if (element !== null) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
     };
 
     return (
@@ -50,49 +58,22 @@ const Hero = () => {
                 <NavbarBackground>
                     <Navbar>
                         <Menu>
-                            <MenuLink
-                                to="aboutus"
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                exact="true"
-                            >
-                                絆支至誠塾について
-                            </MenuLink>
+                            <MenuRoute to="/">絆支至誠塾について</MenuRoute>
                         </Menu>
                         <Menu>
-                            <MenuLink
-                                to="gallery"
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                exact="true"
-                            >
+                            <MenuRoute to="/gallery" exact="true">
                                 ギャラリー
-                            </MenuLink>
+                            </MenuRoute>
                         </Menu>
-                        <Menu></Menu>
                         <Menu>
-                            <MenuLink
-                                to="price"
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                exact="true"
-                            >
+                            <MenuRoute to="/" onClick={gotoPrice}>
                                 メニュー
-                            </MenuLink>
+                            </MenuRoute>
                         </Menu>
                         <Menu>
-                            <MenuLink
-                                to="access"
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                exact="true"
-                            >
+                            <MenuRoute to="/" onClick={gotoAccess}>
                                 アクセス
-                            </MenuLink>
+                            </MenuRoute>
                         </Menu>
                     </Navbar>
                 </NavbarBackground>
@@ -130,7 +111,7 @@ const Hero = () => {
                     </ContentRight>
                 </Content>
                 <BottomNavbar>
-                    <BottomMenu onClick={openPhone}>電話で連絡</BottomMenu>
+                    <BottomMenu>電話で連絡</BottomMenu>
                     <BottomMenu>メールで連絡</BottomMenu>
                     <BottomMenu backgroundColor="coral" color="white">
                         <MenuLinks

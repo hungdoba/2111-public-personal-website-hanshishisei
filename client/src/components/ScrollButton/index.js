@@ -1,10 +1,11 @@
 import React from "react";
-import { Button } from "./element";
+import { Button, Icon } from "./element";
+import upRow from "../Images/system/photos025.png";
 
 const ScrollButton = ({ visible, onClick }) => {
     return (
         <Button visible={visible} onClick={onClick}>
-            &#10162;
+            <Icon alt="upRow" src={upRow} />
         </Button>
     );
 };

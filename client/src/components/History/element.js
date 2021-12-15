@@ -18,7 +18,7 @@ export const MainPhoto = styled.div`
     align-items: center;
 `;
 
-export const GallaryPhoto = styled.div`
+export const GalleryPhoto = styled.div`
     height: 20%;
     width: 100%;
     display: flex;

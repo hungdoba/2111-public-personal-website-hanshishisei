@@ -1,8 +1,11 @@
-import styled from "styled-components";
-import forestLargeBlur from "../Images/photos001.jpg";
-import whiteBackground from "../Images/photos002.jpg";
-import whiteBackgrounds from "../Images/photos003.jpg";
 import { Link } from "react-scroll";
+import { Link as LinkR } from "react-router-dom";
+
+import styled from "styled-components";
+
+import forestLargeBlur from "../Images/system/photos001.jpg";
+import whiteBackground from "../Images/system/photos002.jpg";
+import whiteBackgrounds from "../Images/system/photos003.jpg";
 
 export const Background = styled.div`
     height: 100vh;
@@ -113,6 +116,15 @@ export const MenuLink = styled(Link)`
 `;
 
 export const MenuLinks = styled(Link)`
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+        color: orange;
+    }
+`;
+
+export const MenuRoute = styled(LinkR)`
     text-decoration: none;
 
     &:hover {

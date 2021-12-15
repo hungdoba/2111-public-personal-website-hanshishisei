@@ -11,7 +11,7 @@ import {
     Title,
     Image,
 } from "./element";
-import photoBus from "../Images/photos016.jpg";
+import photoBus from "../Images/system/photos016.jpg";
 
 const Access = () => {
     return (

@@ -2,8 +2,8 @@ import React from "react";
 
 import { Background, Container, Title, Image, Website } from "./element";
 
-import GithubIcon from "../Images/photos005.jpg";
-import LoginIcon from "../Images/photos022.jpg";
+import GithubIcon from "../Images/system/photos005.jpg";
+import LoginIcon from "../Images/system/photos022.jpg";
 
 const Footer = ({ setHiddenLogin }) => {
     const login = () => {

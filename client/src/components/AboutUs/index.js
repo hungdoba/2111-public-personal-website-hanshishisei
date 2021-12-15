@@ -10,11 +10,11 @@ import {
     Paragraph,
     Title,
 } from "./element";
-import oldImage from "../Images/photos009.jpg";
-import boardImage from "../Images/photos013.jpg";
-import sakeImage from "../Images/photos011.jpg";
-import childImage from "../Images/photos012.jpg";
-import treeImage from "../Images/photos014.jpg";
+import oldImage from "../Images/system/photos009.jpg";
+import boardImage from "../Images/system/photos013.jpg";
+import sakeImage from "../Images/system/photos011.jpg";
+import childImage from "../Images/system/photos012.jpg";
+import treeImage from "../Images/system/photos014.jpg";
 import { ChildContent } from "../Hero/element";
 
 const AboutUs = () => {

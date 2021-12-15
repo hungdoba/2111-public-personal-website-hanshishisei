@@ -11,7 +11,8 @@ export const Container = styled.div`
     height: 100%;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 `;
 
 export const Title = styled.div`
@@ -49,10 +50,24 @@ export const Column = styled.div`
     }
 `;
 
-export const Image = styled.img`
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+export const Ul = styled.ul`
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+`;
+
+export const Li = styled.li`
+    height: 40vh;
+    flex-grow: 1;
+`;
+
+export const ImgCover = styled.div``;
+
+export const Img = styled.img`
+    max-height: 95%;
+    max-width: 95%;
+    object-fit: cover;
+    vertical-align: bottom;
 
     &:hover {
         --webkit-transform: scale(1.5);

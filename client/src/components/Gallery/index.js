@@ -1,26 +1,54 @@
-import React, { useEffect, useState } from "react";
-import { Background, Title, Column, Container, Row, Image } from "./element";
+import React, { useState } from "react";
 
-import { Photos } from "../../data/Photos";
+import ViewImage from "../ViewImage";
 
-const Gallery = ({ showImage }) => {
-    const [column1, setColumn1] = useState([]);
-    const [column2, setColumn2] = useState([]);
-    const [column3, setColumn3] = useState([]);
-    const [column4, setColumn4] = useState([]);
+import { Background, Title, Container, Ul, Li, Img } from "./element";
 
-    useEffect(() => {
-        const photosLength = Photos.length;
-        const columnLength = Math.ceil(photosLength / 4);
-        let temp = Photos.slice(0, columnLength);
-        setColumn1(temp);
-        temp = Photos.slice(columnLength, 2 * columnLength);
-        setColumn2(temp);
-        temp = Photos.slice(2 * columnLength, 3 * columnLength);
-        setColumn3(temp);
-        temp = Photos.slice(3 * columnLength, 4 * columnLength);
-        setColumn4(temp);
-    }, []);
+import { food } from "../../data/food";
+import { game } from "../../data/game";
+import { utensil } from "../../data/utensil";
+import { infrastructure } from "../../data/infrastructure";
+import { history } from "../../data/history";
+
+const Gallery = () => {
+    const [visible, setVisible] = useState(false);
+    const [Photos, setPhotos] = useState();
+    const [selectedId, setSelectedId] = useState(0);
+
+    const foodSelected = (e) => {
+        setPhotos(food);
+        setSelectedId(Number(e.target.alt));
+        setVisible(true);
+    };
+
+    const gameSelected = (e) => {
+        setPhotos(game);
+        setSelectedId(Number(e.target.alt));
+        setVisible(true);
+    };
+
+    const utensilSelected = (e) => {
+        setPhotos(utensil);
+        setSelectedId(Number(e.target.alt));
+        setVisible(true);
+    };
+
+    const infrastructureSelected = (e) => {
+        setPhotos(infrastructure);
+        setSelectedId(Number(e.target.alt));
+        setVisible(true);
+    };
+
+    const historySelected = (e) => {
+        setPhotos(history);
+        setSelectedId(Number(e.target.alt));
+        setVisible(true);
+    };
+
+    const hideViewImage = () => {
+        setVisible(false);
+        setSelectedId(0);
+    };
 
     return (
         <Background id="gallery">
@@ -28,61 +56,106 @@ const Gallery = ({ showImage }) => {
                 <Title>
                     <h1>ギャラリー</h1>
                 </Title>
-                <Row>
-                    <Column>
-                        {column1 &&
-                            column1.map((photo) => {
-                                return (
-                                    <Image
+                <Title>
+                    <h2>食</h2>
+                </Title>
+                <Ul>
+                    {food &&
+                        food.map((photo) => {
+                            return (
+                                <Li key={photo.key}>
+                                    <Img
                                         alt={photo.alt}
-                                        key={photo.key}
-                                        src={photo.image}
-                                        onClick={showImage}
+                                        src={photo.src}
+                                        onClick={foodSelected}
                                     />
-                                );
-                            })}
-                    </Column>
-                    <Column>
-                        {column2 &&
-                            column2.map((photo) => {
-                                return (
-                                    <Image
-                                        alt={photo.alt}
-                                        key={photo.key}
-                                        src={photo.image}
-                                        onClick={showImage}
-                                    />
-                                );
-                            })}
-                    </Column>
-                    <Column>
-                        {column3 &&
-                            column3.map((photo) => {
-                                return (
-                                    <Image
-                                        alt={photo.alt}
-                                        key={photo.key}
-                                        src={photo.image}
-                                        onClick={showImage}
-                                    />
-                                );
-                            })}
-                    </Column>
-                    <Column>
-                        {column4 &&
-                            column4.map((photo) => {
-                                return (
-                                    <Image
-                                        alt={photo.alt}
-                                        key={photo.key}
-                                        src={photo.image}
-                                        onClick={showImage}
-                                    />
-                                );
-                            })}
-                    </Column>
-                </Row>
+                                </Li>
+                            );
+                        })}
+                </Ul>
             </Container>
+            <Container>
+                <Title>
+                    <h2>イベント・ゲーム</h2>
+                </Title>
+                <Ul>
+                    {game &&
+                        game.map((photo) => {
+                            return (
+                                <Li key={photo.key}>
+                                    <Img
+                                        alt={photo.alt}
+                                        src={photo.src}
+                                        onClick={gameSelected}
+                                    />
+                                </Li>
+                            );
+                        })}
+                </Ul>
+            </Container>
+            <Container>
+                <Title>
+                    <h2>楽・学・覚(半学半教)</h2>
+                </Title>
+                <Ul>
+                    {infrastructure &&
+                        infrastructure.map((photo) => {
+                            return (
+                                <Li key={photo.key}>
+                                    <Img
+                                        alt={photo.alt}
+                                        src={photo.src}
+                                        onClick={infrastructureSelected}
+                                    />
+                                </Li>
+                            );
+                        })}
+                </Ul>
+            </Container>
+            <Container>
+                <Title>
+                    <h2>施設</h2>
+                </Title>
+                <Ul>
+                    {utensil &&
+                        utensil.map((photo) => {
+                            return (
+                                <Li key={photo.key}>
+                                    <Img
+                                        alt={photo.alt}
+                                        src={photo.src}
+                                        onClick={utensilSelected}
+                                    />
+                                </Li>
+                            );
+                        })}
+                </Ul>
+            </Container>
+            <Container>
+                <Title>
+                    <h2>履歴</h2>
+                </Title>
+                <Ul>
+                    {history &&
+                        history.map((photo) => {
+                            return (
+                                <Li key={photo.key}>
+                                    <Img
+                                        alt={photo.alt}
+                                        src={photo.src}
+                                        onClick={utensilSelected}
+                                    />
+                                </Li>
+                            );
+                        })}
+                </Ul>
+            </Container>
+            <ViewImage
+                visible={visible}
+                hideViewImage={hideViewImage}
+                selectedId={selectedId}
+                Photos={Photos}
+            />
         </Background>
     );
 };
