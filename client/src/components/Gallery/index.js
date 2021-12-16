@@ -39,12 +39,6 @@ const Gallery = () => {
         setVisible(true);
     };
 
-    const historySelected = (e) => {
-        setPhotos(history);
-        setSelectedId(Number(e.target.alt));
-        setVisible(true);
-    };
-
     const hideViewImage = () => {
         setVisible(false);
         setSelectedId(0);

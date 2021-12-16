@@ -26,7 +26,7 @@ const Access = () => {
                             住所：茨城県日立市入四間町１５６６－９
                         </Paragraph>
                         <Paragraph>電話番号：08010807396</Paragraph>
-                        <Paragraph>メール：hanshishisei@gmai.com</Paragraph>
+                        <Paragraph>メール：hanshishisei@gmail.com</Paragraph>
                     </Content>
                 </ContentLeft>
                 <ContentRight>
