@@ -17,6 +17,7 @@ const History = ({ hidden }) => {
         console.log(e.target);
     };
     const hideImage = () => {};
+
     return (
         <Background hidden={hidden}>
             <MainPhoto>

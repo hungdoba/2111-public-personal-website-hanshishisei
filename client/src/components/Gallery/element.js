@@ -23,11 +23,11 @@ export const Title = styled.div`
 `;
 
 export const Row = styled.div`
-    display: --ms-flexbox;
     display: flex;
+    display: --ms-flexbox;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     padding: 0 4px;
+    flex-wrap: wrap;
 `;
 
 export const Column = styled.div`

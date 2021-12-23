@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 import ViewImage from "../ViewImage";
 
-import { Background, Title, Container, Ul, Li, Img } from "./element";
-
 import { food } from "../../data/food";
 import { game } from "../../data/game";
+import { history } from "../../data/history";
 import { utensil } from "../../data/utensil";
 import { infrastructure } from "../../data/infrastructure";
-import { history } from "../../data/history";
+
+import { Background, Title, Container, Ul, Li, Img } from "./element";
 
 const Gallery = () => {
     const [visible, setVisible] = useState(false);
