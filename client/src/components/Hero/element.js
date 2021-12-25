@@ -34,8 +34,8 @@ export const Arrow = styled.div`
 `;
 
 export const Container = styled.div`
-    width: 80vw;
-    height: 80vh;
+    width: 90vw;
+    height: 90vh;
     margin-top: auto;
     margin-bottom: auto;
     padding-bottom: 5vh;
@@ -134,8 +134,8 @@ export const MenuRoute = styled(LinkR)`
 `;
 
 export const Content = styled.div`
-    width: 80%;
-    height: 65%;
+    width: 90%;
+    height: 75%;
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -147,7 +147,7 @@ export const Content = styled.div`
 
 export const ContentLeft = styled.div`
     width: 45%;
-    max-height: 55%;
+    max-height: 60%;
     color: white;
     margin-right: 5%;
     display: flex;
@@ -178,7 +178,7 @@ export const TopContent = styled.div`
 
 export const ContentRight = styled.div`
     width: 45%;
-    max-height: 55%;
+    max-height: 60%;
     color: white;
     margin-top: 10%;
     margin-left: 5%;
@@ -208,7 +208,7 @@ export const ContentCenter = styled.div`
 `;
 
 export const Title = styled.div`
-    font-size: 42px;
+    font-size: 24px;
     font-weight: bold;
     margin: 10px;
 
@@ -218,7 +218,7 @@ export const Title = styled.div`
 `;
 
 export const Text = styled.div`
-    font-size: 24px;
+    font-size: 20px;
     margin: 10px;
 
     @media screen and (max-width: 767px) {
@@ -228,6 +228,7 @@ export const Text = styled.div`
 
 export const MediumText = styled.div`
     font-size: 20px;
+    font-weight: bold;
     margin: 10px;
 
     @media screen and (max-width: 767px) {

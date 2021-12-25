@@ -22,7 +22,7 @@ const AboutUs = () => {
         <Background id="aboutus">
             <Container>
                 <Title>
-                    <h3>絆支・至誠塾について</h3>
+                    <h1>絆支・至誠塾について</h1>
                 </Title>
                 <ContentCenter>
                     <Content>
@@ -38,7 +38,7 @@ const AboutUs = () => {
                     </Content>
                 </ContentCenter>
                 <ChildContent>
-                    <Title>◉また会おうの約束（Promise to meet again ）</Title>
+                    <Title>また会おうの約束（Promise to meet again ）</Title>
                     <ContentLeft>
                         <Content>
                             <Paragraph>
@@ -58,7 +58,7 @@ const AboutUs = () => {
                     <ContentRight>
                         <Image src={oldImage} alt="board" />
                     </ContentRight>
-                    <Title>◉【山中友子】と【山中友子隊体験村】</Title>
+                    <Title>【山中友子】と【山中友子隊体験村】</Title>
                     <ContentLeft>
                         <Content>
                             <Paragraph>
@@ -89,9 +89,7 @@ const AboutUs = () => {
                     <ContentRight>
                         <Image src={childImage} alt="child" />
                     </ContentRight>
-                    <Title>
-                        　◉【夢の続き】(The continuation of the dream)
-                    </Title>
+                    <Title>【夢の続き】(The continuation of the dream)</Title>
                     <ContentCenter>
                         <Content>
                             <Paragraph>
@@ -99,7 +97,7 @@ const AboutUs = () => {
                             </Paragraph>
                         </Content>
                     </ContentCenter>
-                    <Title>◉【シンボルツリー】(Symbol Tree)</Title>
+                    <Title>【シンボルツリー】(Symbol Tree)</Title>
                     <ContentLeft>
                         <Content>
                             <Paragraph>
@@ -110,7 +108,7 @@ const AboutUs = () => {
                     <ContentRight>
                         <Image src={treeImage} alt="tree" />
                     </ContentRight>
-                    <Title>◉【メッセージボード】(Message Board)</Title>
+                    <Title>【メッセージボード】(Message Board)</Title>
                     <ContentLeft>
                         <Content>
                             <Paragraph>

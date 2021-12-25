@@ -51,7 +51,7 @@ const Gallery = () => {
                     <h1>ギャラリー</h1>
                 </Title>
                 <Title>
-                    <h2>食</h2>
+                    <h3>食べる</h3>
                 </Title>
                 <Ul>
                     {food &&
@@ -70,7 +70,7 @@ const Gallery = () => {
             </Container>
             <Container>
                 <Title>
-                    <h2>イベント・ゲーム</h2>
+                    <h3>イベント・ゲーム</h3>
                 </Title>
                 <Ul>
                     {game &&
@@ -89,7 +89,7 @@ const Gallery = () => {
             </Container>
             <Container>
                 <Title>
-                    <h2>楽・学・覚(半学半教)</h2>
+                    <h3>楽・学・覚(半学半教)</h3>
                 </Title>
                 <Ul>
                     {infrastructure &&
@@ -108,7 +108,7 @@ const Gallery = () => {
             </Container>
             <Container>
                 <Title>
-                    <h2>施設</h2>
+                    <h3>施設</h3>
                 </Title>
                 <Ul>
                     {utensil &&
@@ -127,7 +127,7 @@ const Gallery = () => {
             </Container>
             <Container>
                 <Title>
-                    <h2>履歴</h2>
+                    <h3>履歴</h3>
                 </Title>
                 <Ul>
                     {history &&

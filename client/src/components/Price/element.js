@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Background = styled.div`
     padding-top: 2vh;
     padding-bottom: 2vh;
+    background-image: linear-gradient(to right, lightblue, rgba(255, 0, 0, 0));
 `;
 
 export const Container = styled.div`
@@ -10,18 +11,24 @@ export const Container = styled.div`
     height: 100%;
     margin: auto;
     display: flex;
-    align-items: stretch;
+    flex-wrap: wrap;
 
     @media screen and (max-width: 767px) {
         flex-direction: column;
     }
 `;
 
+export const ContentTitle = styled.h3`
+    margin-top: 1em;
+`;
+
+export const ContentCenter = styled.div`
+    width: 100%;
+    padding-bottom: 1rem;
+`;
+
 export const ContentLeft = styled.div`
-    width: 38.2%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 50%;
 
     @media screen and (max-width: 767px) {
         width: 100%;
@@ -29,7 +36,7 @@ export const ContentLeft = styled.div`
 `;
 
 export const ContentRight = styled.div`
-    width: 61.8%;
+    width: 50%;
 
     @media screen and (max-width: 767px) {
         width: 100%;
@@ -45,12 +52,11 @@ export const Image = styled.img`
 export const Title = styled.div`
     width: 90%;
     margin: auto;
-    line-height: 3rem;
     vertical-align: middle;
 `;
 
 export const Content = styled.div`
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-top: 10px;
 `;
@@ -59,6 +65,14 @@ export const Paragraph = styled.p`
     font-size: 24px;
 `;
 
-export const Ul = styled.ul``;
+export const Ul = styled.ul`
+    margin-left: 2rem;
+`;
 
-export const Li = styled.li``;
+export const Li = styled.li`
+    list-style-type: disc;
+`;
+
+export const LiNone = styled.li`
+    list-style-type: none;
+`;

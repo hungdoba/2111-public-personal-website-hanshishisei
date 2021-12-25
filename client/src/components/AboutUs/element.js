@@ -52,9 +52,8 @@ export const Title = styled.div`
     width: 100%;
     min-height: 10vh;
     line-height: 10vh;
-    vertical-align: middle;
     font-weight: bold;
-    font-size: 24px;
+    vertical-align: middle;
 
     @media screen and (max-width: 767px) {
         line-height: 1.5em;
@@ -64,13 +63,10 @@ export const Title = styled.div`
 export const Content = styled.div`
     width: 90%;
     margin: auto;
-    margin-top: 10px;
 `;
 
 export const Paragraph = styled.p`
-    font-size: 24px;
-    text-indent: 2em;
-    margin-bottom: 1.5em;
+    text-indent: 1em;
 
     @media screen and (max-width: 767px) {
         font-size: 16px;

@@ -14,7 +14,7 @@ const Footer = ({ setHiddenLogin }) => {
         <Background>
             <Container>
                 <Title
-                    href="https://github.com/hungdoba/blog"
+                    href="https://github.com/hungdoba"
                     target="_blank"
                     rel="noreferrer"
                 >
@@ -28,7 +28,7 @@ const Footer = ({ setHiddenLogin }) => {
                     onClick={login}
                 />
 
-                <Website href="/#/blog">Hanshishisei.jp</Website>
+                <Website href="/#/blog">Hanshishisei.com</Website>
             </Container>
         </Background>
     );

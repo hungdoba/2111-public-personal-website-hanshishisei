@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Background = styled.div`
     padding-top: 2vh;
     padding-bottom: 2vh;
-    background-image: linear-gradient(to right, lightblue, rgba(255, 0, 0, 0));
 `;
 
 export const Container = styled.div`
@@ -41,7 +40,7 @@ export const Image = styled.img`
     height: auto;
     margin-top: 5%;
     margin-bottom: 5%;
-    border-radius: 20px;
+    border-radius: 10px;
 `;
 
 export const ImageSmall = styled.img`
@@ -66,17 +65,16 @@ export const Content = styled.div`
 `;
 
 export const Paragraph = styled.p`
-    font-size: 24px;
-    margin-top: 5vh;
+    margin-top: 1em;
+`;
 
-    @media screen and (max-width: 767px) {
-        margin-top: 1em;
-    }
+export const ParagraphContent = styled.p`
+    margin-left: 1em;
 `;
 
 export const Map = styled.div`
     width: 98%;
-    height: 98%;
+    height: 60vh;
     margin: 1%;
     overflow: hidden;
 `;
