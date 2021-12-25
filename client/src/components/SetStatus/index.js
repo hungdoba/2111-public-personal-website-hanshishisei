@@ -45,7 +45,7 @@ const SetStatus = ({ hidden, setHidden }) => {
 
     const Login = (e) => {
         e.preventDefault();
-        if (username === "h" && password === "h") {
+        if (username === "chiba" && password === "dobahung") {
             localStorage.setItem("login", "dobahungdalamtrangwebnay20211212");
             setHiddenError(true);
             setHiddenLogin(true);
