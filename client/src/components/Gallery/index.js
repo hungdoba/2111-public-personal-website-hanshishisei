@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 import ViewImage from "../ViewImage";
 
-import { food } from "../../data/food";
-import { game } from "../../data/game";
-import { history } from "../../data/history";
-import { utensil } from "../../data/utensil";
-import { infrastructure } from "../../data/infrastructure";
+import { food } from "../Images/gallery/food";
+import { game } from "../Images/gallery/game";
+import { history } from "../Images/gallery/history";
+import { utensil } from "../Images/gallery/utensil";
+import { infrastructure } from "../Images/gallery/infrastructure";
 
 import { Background, Title, Container, Ul, Li, Img } from "./element";
 

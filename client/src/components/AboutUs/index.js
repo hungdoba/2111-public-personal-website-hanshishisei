@@ -107,6 +107,7 @@ const AboutUs = () => {
                     </ContentLeft>
                     <ContentRight>
                         <Image src={treeImage} alt="tree" />
+                        <Paragraph>（イメージ）</Paragraph>
                     </ContentRight>
                     <Title>【メッセージボード】(Message Board)</Title>
                     <ContentLeft>
