@@ -13,6 +13,7 @@ import {
     ParagraphContent,
 } from "./element";
 import photoBus from "../Images/system/photos016.jpg";
+import { ContentCenter } from "../AboutUs/element";
 
 const Access = () => {
     return (
@@ -35,8 +36,8 @@ const Access = () => {
                             9:00～15:30
                         </Paragraph>
                         <Paragraph>
-                            休塾: 　1月～3月<br></br>
-                            　&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;毎週第二・第四日曜日(プログラムにより開塾する場合もあります)
+                            休塾: 　1月～3月毎週第二・第四日曜日<br></br>
+                            　&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(プログラムにより開塾する場合もあります)
                         </Paragraph>
                     </Content>
                 </ContentLeft>
@@ -52,7 +53,7 @@ const Access = () => {
                 </ContentRight>
             </Container>
             <Container>
-                <ContentLeft>
+                <ContentCenter>
                     <Content>
                         <h3>交通アクセス:</h3>
                         <Paragraph>車</Paragraph>
@@ -66,15 +67,12 @@ const Access = () => {
                         </ParagraphContent>
                         　<Paragraph>電車　</Paragraph>
                         <ParagraphContent>
-                            JR常磐線「日立駅」下車上
+                            JR常磐線「日立駅」下車
                             <br></br>
-                            野駅～約90分
+                            上野駅～約90分
                         </ParagraphContent>
                     </Content>
-                </ContentLeft>
-                <ContentRight>
-                    <Image src={photoBus} />
-                </ContentRight>
+                </ContentCenter>
             </Container>
         </Background>
     );

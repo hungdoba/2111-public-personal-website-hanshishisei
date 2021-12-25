@@ -18,6 +18,11 @@ export const Container = styled.div`
     }
 `;
 
+export const ContentCenter = styled.div`
+    width: 100%;
+    margin-bottom: 5vh;
+`;
+
 export const ContentLeft = styled.div`
     width: 38.2%;
     margin-bottom: 5vh;
