@@ -71,6 +71,7 @@ export const Ul = styled.ul`
 
 export const Li = styled.li`
     list-style-type: disc;
+    margin-top: 0.5em;
 `;
 
 export const LiNone = styled.li`
