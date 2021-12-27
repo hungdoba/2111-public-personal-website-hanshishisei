@@ -9,11 +9,9 @@ import {
     Paragraph,
     Iframe,
     Title,
-    Image,
     ParagraphContent,
     ParagraphContentRight,
 } from "./element";
-import photoBus from "../Images/system/photos016.jpg";
 import { ContentCenter } from "../AboutUs/element";
 
 const Access = () => {
@@ -27,7 +25,7 @@ const Access = () => {
                     <Content>
                         <Paragraph>名称：絆支・至誠塾</Paragraph>
                         <Paragraph>
-                            住所：〒311-0402　茨城県日立市　入四間町1566-9
+                            住所：〒311-0402　茨城県日立市入四間町1566-9
                         </Paragraph>
                         <Paragraph>電話番号：080-1080-7396</Paragraph>
                         <Paragraph>メール：hanshishisei@gmail.com</Paragraph>
@@ -63,9 +61,12 @@ const Access = () => {
                             <br></br>
                             常磐自動車道「日立中央IC」～車で約10分
                         </ParagraphContent>
-                        <ParagraphContentRight>
-                            【「日立中央IC」出口丁字路を右折し日立山方線へ、もとやまトンネル・御岩神社をぬけ最初の信号を右折し、グリ一ンふるさとラインを約1.3km、右側に塾看板があり、そこから約500mです】
-                        </ParagraphContentRight>
+                        <ParagraphContent>
+                            【「日立中央IC」出口丁字路を右折し日立山方線へ、もとやまトンネル・御岩神社を
+                            <br></br>
+                            ぬけ最初の信号を右折し、グリ一ンふるさとラインを約1.3km、左側に塾看板があり、そこ
+                            <br></br>から約500mです】
+                        </ParagraphContent>
                         　<Paragraph>電車　</Paragraph>
                         <ParagraphContent>
                             JR常磐線「日立駅」下車
