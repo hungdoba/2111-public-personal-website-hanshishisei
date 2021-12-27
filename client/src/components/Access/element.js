@@ -77,6 +77,10 @@ export const ParagraphContent = styled.p`
     margin-left: 1em;
 `;
 
+export const ParagraphContentRight = styled.p`
+    text-align: right;
+`;
+
 export const Map = styled.div`
     width: 98%;
     height: 60vh;

@@ -70,6 +70,15 @@ import photo69 from "./photo (69).jpg";
 import photo70 from "./photo (70).jpg";
 import photo71 from "./photo (71).jpg";
 import photo72 from "./photo (72).jpg";
+import photo73 from "./photo (1).jfif";
+import photo74 from "./photo (2).jfif";
+import photo75 from "./photo (3).jfif";
+import photo76 from "./photo (4).jfif";
+import photo77 from "./photo (5).jfif";
+import photo78 from "./photo (6).jfif";
+import photo79 from "./photo (7).jfif";
+import photo80 from "./photo (8).jfif";
+import photo81 from "./photo (9).jfif";
 
 export const history = [
     { src: `${photo01}`, alt: "1", key: 1 },
@@ -142,4 +151,13 @@ export const history = [
     { src: `${photo70}`, alt: "70", key: 70 },
     { src: `${photo71}`, alt: "71", key: 71 },
     { src: `${photo72}`, alt: "72", key: 72 },
+    { src: `${photo73}`, alt: "73", key: 73 },
+    { src: `${photo74}`, alt: "74", key: 74 },
+    { src: `${photo75}`, alt: "75", key: 75 },
+    { src: `${photo76}`, alt: "76", key: 76 },
+    { src: `${photo77}`, alt: "77", key: 77 },
+    { src: `${photo78}`, alt: "78", key: 78 },
+    { src: `${photo79}`, alt: "79", key: 79 },
+    { src: `${photo80}`, alt: "80", key: 80 },
+    { src: `${photo81}`, alt: "81", key: 81 },
 ];

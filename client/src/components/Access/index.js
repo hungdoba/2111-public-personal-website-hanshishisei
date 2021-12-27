@@ -11,6 +11,7 @@ import {
     Title,
     Image,
     ParagraphContent,
+    ParagraphContentRight,
 } from "./element";
 import photoBus from "../Images/system/photos016.jpg";
 import { ContentCenter } from "../AboutUs/element";
@@ -61,10 +62,10 @@ const Access = () => {
                             JR日立駅～茨城交通バスで約30分(東河内行き「中里スポーツ広場」下車)
                             <br></br>
                             常磐自動車道「日立中央IC」～車で約10分
-                            <br></br>
-                            【「日立中央IC」出口丁字路を右折し日立山方線へ、もとやまトンネル・御岩神社をぬけ最初の信号を右折し、グリ一ンふるさとラインを約1.3km、右側に塾看板があり、そこから約500mです】
-                            　
                         </ParagraphContent>
+                        <ParagraphContentRight>
+                            【「日立中央IC」出口丁字路を右折し日立山方線へ、もとやまトンネル・御岩神社をぬけ最初の信号を右折し、グリ一ンふるさとラインを約1.3km、右側に塾看板があり、そこから約500mです】
+                        </ParagraphContentRight>
                         　<Paragraph>電車　</Paragraph>
                         <ParagraphContent>
                             JR常磐線「日立駅」下車
