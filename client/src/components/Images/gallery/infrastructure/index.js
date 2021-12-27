@@ -59,6 +59,7 @@ import photo58 from "./photo (58).jpg";
 import photo59 from "./photo (59).jpg";
 import photo60 from "./photo (60).jpg";
 import photo61 from "./photo (61).jpg";
+import photo62 from "./photo (62).jpg";
 
 export const infrastructure = [
     { src: `${photo01}`, alt: "1", key: 1 },
@@ -122,4 +123,5 @@ export const infrastructure = [
     { src: `${photo59}`, alt: "59", key: 59 },
     { src: `${photo60}`, alt: "60", key: 60 },
     { src: `${photo61}`, alt: "61", key: 61 },
+    { src: `${photo62}`, alt: "62", key: 62 },
 ];
