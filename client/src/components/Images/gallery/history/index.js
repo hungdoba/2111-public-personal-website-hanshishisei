@@ -38,7 +38,7 @@ import photo37 from "./photo (37).jpg";
 import photo38 from "./photo (38).jpg";
 import photo39 from "./photo (39).jpg";
 import photo40 from "./photo (40).jpg";
-import photo41 from "./photo (41).jpg";
+//import photo41 from "./photo (41).jpg";
 import photo42 from "./photo (42).jpg";
 import photo43 from "./photo (43).jpg";
 import photo44 from "./photo (44).jpg";
@@ -120,7 +120,6 @@ export const history = [
     { src: `${photo38}`, alt: "38", key: 38 },
     { src: `${photo39}`, alt: "39", key: 39 },
     { src: `${photo40}`, alt: "40", key: 40 },
-    { src: `${photo41}`, alt: "41", key: 41 },
     { src: `${photo43}`, alt: "43", key: 43 },
     { src: `${photo44}`, alt: "44", key: 44 },
     { src: `${photo45}`, alt: "45", key: 45 },

@@ -162,6 +162,16 @@ const Price = () => {
                             <LiNone>
                                 学生5名の地域活動のお手伝いを行う予定です。令和元年に実施して以降コロナのため中止。
                             </LiNone>
+
+                            <Li>
+                                レジンでコ一スタ一を作ろう
+                            </Li>
+                            <LiNone> 3,500円~ </LiNone>
+                            <LiNone> 募集:10名 </LiNone>
+
+                            <Li> 垂らしこみア一ト </Li>
+                            <LiNone> 4,000円~ </LiNone>
+                            <LiNone> 募集:10名</LiNone>
                         </Ul>
                     </Content>
                 </ContentLeft>
